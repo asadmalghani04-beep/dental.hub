@@ -248,8 +248,17 @@
 
 <main class="w-full pt-20 relative z-10">
 
-<!-- ================= HERO SECTION (FIRST LOOK REDESIGN) ================= -->
-<section class="relative w-full pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden aesthetic-dot-grid">
+<!-- ================= HERO SECTION (FIRST LOOK WITH CLINIC RECEPTION BACKGROUND) ================= -->
+<section class="relative w-full pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+  
+  <!-- Real Clinic Waiting Lounge & Reception Background Layer (Hero Only) -->
+  <div class="absolute inset-0 w-full h-full -z-10 overflow-hidden">
+    <img src="assets/clinic-hero-bg.jpg" alt="Dental Hub Kot Addu Patient Lounge & Reception" class="w-full h-full object-cover object-[center_30%] scale-105 filter brightness-[0.98]" />
+    <!-- Frosted luxury glassmorphic gradient overlays for crystal-clear readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/88 to-white/65"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-transparent to-[#f8fafc]"></div>
+    <div class="absolute inset-0 aesthetic-dot-grid opacity-20 pointer-events-none"></div>
+  </div>
   <div class="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
     <!-- Luminous Announcement Badge (Aesthetic, replaces ugly grey pill bar) -->
