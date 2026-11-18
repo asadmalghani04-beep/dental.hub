@@ -110,24 +110,24 @@
 <div class="glow-orb top-[1400px] left-10 w-[600px] h-[600px] bg-sky-100/50"></div>
 <div class="glow-orb top-[2400px] right-20 w-[550px] h-[550px] bg-teal-100/45"></div>
 
-<!-- ================= AESTHETIC TOP NAVIGATION (NO CLUNKY BARS) ================= -->
-<header class="fixed top-0 left-0 right-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-white/60 shadow-[0_4px_25px_-5px_rgba(0,101,145,0.06)] transition-all">
-  <div class="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+<!-- ================= AESTHETIC TOP NAVIGATION (RESPONSIVE & MOBILE-OPTIMIZED) ================= -->
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-white/60 shadow-[0_4px_25px_-5px_rgba(0,101,145,0.06)] transition-all">
+  <div class="max-w-[1340px] mx-auto px-3 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-2 sm:gap-6">
     
     <!-- Clinic Brand & Logo -->
-    <a href="#" class="flex items-center gap-3.5 group">
+    <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 group flex-shrink-0">
       <div class="relative">
-        <img src="assets/dental-hub-logo.png" alt="Dental Hub Kot Addu Logo" class="w-12 h-12 rounded-full object-contain bg-white p-1 ring-2 ring-sky-200/80 shadow-md group-hover:scale-105 group-hover:ring-sky-400 transition-all duration-300" />
-        <span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-white ring-1 ring-emerald-300"></span>
+        <img src="assets/dental-hub-logo.png" alt="Dental Hub Kot Addu Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-contain bg-white p-0.5 sm:p-1 ring-2 ring-sky-200/80 shadow-md group-hover:scale-105 group-hover:ring-sky-400 transition-all duration-300" />
+        <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-emerald-500 border-2 border-white ring-1 ring-emerald-300"></span>
       </div>
       <div class="flex flex-col">
-        <div class="flex items-center gap-2">
-          <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 group-hover:text-primary transition-colors">
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          <span class="text-lg sm:text-2xl font-extrabold tracking-tight text-slate-900 group-hover:text-primary transition-colors">
             Dental<span class="text-primary-container">Hub</span>
           </span>
           <span class="hidden sm:inline-block px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 text-[10px] font-bold tracking-wide uppercase">Kot Addu</span>
         </div>
-        <span class="text-[11px] font-medium text-slate-500 tracking-wide">Multi-Specialist Dental Care</span>
+        <span class="text-[10px] sm:text-[11px] font-medium text-slate-500 tracking-wide">Multi-Specialist Dental Care</span>
       </div>
     </a>
 
@@ -160,33 +160,33 @@
     </nav>
 
     <!-- Right Actions -->
-    <div class="flex items-center gap-3 sm:gap-4">
-      <!-- Direct Contact Phone -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Direct Contact Phone (Desktop) -->
       <a href="tel:+923440486119" class="hidden xl:flex items-center gap-2 text-slate-700 hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-sky-50">
         <span class="material-symbols-outlined text-secondary text-lg">call</span>
         <span class="text-xs font-bold tracking-tight">+92 344 0486119</span>
       </a>
 
-      <!-- Live Sterile OT Surgical Avatar Badge (Integrated seamlessly) -->
-      <a href="#doctors" title="Live Sterile Surgical Operation Theatre at Dental Hub" class="relative group flex items-center gap-2.5 p-1 pr-3 rounded-full bg-white/70 hover:bg-white border border-slate-200/70 hover:border-emerald-300 shadow-sm transition-all">
-        <div class="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-emerald-500/70">
+      <!-- Live Sterile OT Surgical Avatar Badge (Tablet & Desktop) -->
+      <a href="#doctors" title="Live Sterile Surgical Operation Theatre at Dental Hub" class="hidden md:flex items-center gap-2 p-1 pr-3 rounded-full bg-white/80 hover:bg-white border border-slate-200/80 hover:border-emerald-300 shadow-sm transition-all group">
+        <div class="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-emerald-500/70 flex-shrink-0">
           <img src="assets/surgical-team-live.jpg" alt="Active Surgical Team in OT" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
           <span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-emerald-500 ring-1 ring-white"></span>
         </div>
-        <div class="hidden sm:flex flex-col text-left leading-none">
+        <div class="flex flex-col text-left leading-none">
           <span class="text-[11px] font-bold text-slate-800">Sterile OT</span>
           <span class="text-[9px] text-emerald-600 font-semibold">Active Unit</span>
         </div>
       </a>
 
-      <!-- Book Appointment Glowing CTA -->
-      <a href="#appointment" onclick="scrollToAppointment()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#006591] via-[#0ea5e9] to-[#006b5f] text-white text-xs sm:text-sm font-bold shadow-md shadow-sky-500/20 hover:shadow-lg hover:shadow-sky-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer">
+      <!-- Book Appointment CTA (Responsive on Mobile & Desktop) -->
+      <a href="#appointment" onclick="scrollToAppointment()" class="inline-flex items-center gap-1.5 px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full bg-gradient-to-r from-[#006591] via-[#0ea5e9] to-[#006b5f] text-white text-xs sm:text-sm font-bold shadow-md shadow-sky-500/20 hover:shadow-lg hover:shadow-sky-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer flex-shrink-0">
         <span class="material-symbols-outlined text-base">calendar_month</span>
-        <span>Book Appointment</span>
+        <span>Book<span class="hidden sm:inline"> Appointment</span></span>
       </a>
 
-      <!-- Mobile Menu Button -->
-      <button type="button" onclick="document.getElementById('mobile-drawer').classList.toggle('translate-x-full')" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors">
+      <!-- Mobile Menu Button (Prominent, Always Visible & Fully Clickable) -->
+      <button type="button" onclick="openMobileMenu()" aria-label="Open Navigation Menu" class="lg:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 active:scale-95 text-slate-800 flex items-center justify-center transition-all border border-slate-200/80 shadow-sm flex-shrink-0 cursor-pointer">
         <span class="material-symbols-outlined text-2xl">menu</span>
       </button>
     </div>
@@ -194,52 +194,69 @@
   </div>
 </header>
 
-<!-- Mobile Navigation Drawer -->
-<div class="fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-white/95 backdrop-blur-2xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 lg:hidden" id="mobile-drawer">
+<!-- Mobile Navigation Drawer Backdrop -->
+<div id="mobile-drawer-backdrop" onclick="closeMobileMenu()" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[60] hidden transition-opacity duration-300"></div>
+
+<!-- Mobile Navigation Drawer (Smooth Slide-In) -->
+<div id="mobile-drawer" class="fixed inset-y-0 right-0 w-[310px] max-w-[85vw] bg-white shadow-2xl z-[70] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 overflow-y-auto">
   <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
     <div class="flex items-center gap-3">
       <img src="assets/dental-hub-logo.png" alt="Dental Hub Kot Addu Logo" class="w-11 h-11 rounded-full object-contain bg-white p-0.5 ring-2 ring-sky-200" />
       <div>
-        <h3 class="text-base font-bold text-slate-900">Dental Hub</h3>
+        <h3 class="text-base font-bold text-slate-900 leading-tight">Dental Hub</h3>
         <p class="text-[11px] font-semibold text-secondary uppercase">Kot Addu Clinic</p>
       </div>
     </div>
-    <button type="button" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors">
+    <button type="button" onclick="closeMobileMenu()" aria-label="Close Navigation Menu" class="w-9 h-9 rounded-full text-slate-500 hover:text-slate-900 hover:bg-slate-100 flex items-center justify-center transition-colors cursor-pointer">
       <span class="material-symbols-outlined text-2xl">close</span>
     </button>
   </div>
+
+  <!-- Sterile OT Surgery Avatar in Drawer -->
+  <div class="mb-5 p-3 rounded-2xl bg-emerald-50/80 border border-emerald-200/80 flex items-center gap-3">
+    <div class="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-emerald-500 flex-shrink-0">
+      <img src="assets/surgical-team-live.jpg" alt="Active Surgical Team in OT" class="w-full h-full object-cover" />
+      <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-1 ring-white"></span>
+    </div>
+    <div>
+      <p class="text-xs font-bold text-emerald-950">Active Sterile Operation Theatre</p>
+      <p class="text-[11px] text-emerald-700">Multi-Specialist Surgical Team</p>
+    </div>
+  </div>
+
   <nav class="flex flex-col gap-2 flex-1">
-    <a href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-white bg-primary-container shadow-sm">
+    <a href="#" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-white bg-primary-container shadow-sm">
       <span class="material-symbols-outlined text-lg">home</span>
       <span>Home</span>
     </a>
-    <a href="#about" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+    <a href="#about" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
       <span class="material-symbols-outlined text-lg text-slate-400">info</span>
       <span>About Clinic</span>
     </a>
-    <a href="#doctors" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+    <a href="#doctors" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
       <span class="material-symbols-outlined text-lg text-slate-400">group</span>
       <span>Specialist Doctors</span>
     </a>
-    <a href="#services" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+    <a href="#services" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
       <span class="material-symbols-outlined text-lg text-slate-400">medical_services</span>
       <span>Treatments & Services</span>
     </a>
-    <a href="#results" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+    <a href="#results" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
       <span class="material-symbols-outlined text-lg text-slate-400">verified</span>
       <span>Smile Results</span>
     </a>
-    <a href="#contact" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+    <a href="#contact" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition-colors">
       <span class="material-symbols-outlined text-lg text-slate-400">pin_drop</span>
       <span>Contact & Location</span>
     </a>
   </nav>
-  <div class="pt-6 border-t border-slate-100 flex flex-col gap-3">
+
+  <div class="pt-5 border-t border-slate-100 flex flex-col gap-3">
     <a href="tel:+923440486119" class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-100 text-slate-800 font-semibold text-sm">
       <span class="material-symbols-outlined text-secondary text-base">call</span>
       <span>+92 344 0486119</span>
     </a>
-    <a href="#appointment" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full'); scrollToAppointment();" class="flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-primary to-primary-container text-white font-bold text-sm shadow-md">
+    <a href="#appointment" onclick="closeMobileMenu(); scrollToAppointment();" class="flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-primary to-primary-container text-white font-bold text-sm shadow-md">
       <span class="material-symbols-outlined text-base">calendar_month</span>
       <span>Book Appointment</span>
     </a>
@@ -1307,6 +1324,23 @@ function handleAppointmentSubmit(event) {
   document.getElementById('dentalHubForm').classList.add('hidden');
   document.getElementById('bookingSuccessCard').classList.remove('hidden');
   document.getElementById('bookingSuccessCard').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Mobile Menu Controls
+function openMobileMenu() {
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('mobile-drawer-backdrop');
+  if (drawer) drawer.classList.remove('translate-x-full');
+  if (backdrop) backdrop.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('mobile-drawer-backdrop');
+  if (drawer) drawer.classList.add('translate-x-full');
+  if (backdrop) backdrop.classList.add('hidden');
+  document.body.style.overflow = '';
 }
 
 // Reset booking form
